@@ -1,0 +1,14 @@
+This is a script that will export all of your imgur metadata.
+
+1. Make sure you have Ruby 1.9.3 or later.
+2. Make sure you have Bundler (http://bundler.io/) installed.
+3. This command installs all of the other dependencies:
+  $ bundle install
+4. Copy imgur.rc.sample to imgur.rc
+5. Register an app at https://imgur.com/account/settings/apps
+6. Put the Client ID, Client Secret, and your account name in imgur.rc
+7. This goes out to imgur and gets the metadata.
+   Note that it will provide a URL and require two tokens.
+   These tokens are visible in the URL after you authentication the app.
+   $ ruby imgurexport.rb
+8. You now have an export.json file with all of your metadata! Woo!
