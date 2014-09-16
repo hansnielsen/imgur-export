@@ -9,7 +9,6 @@ require "imgur"
 class ImgurExport
   def initialize(username=nil, opts={})
     opts[:config_path] ||= File.expand_path("imgur.rc", File.dirname(__FILE__))
-    opts[:url] = "https://api.imgur.com"
     @client = Imgur::Client.new(opts)
     @client.config[:account_name] ||= username
   end
