@@ -12,14 +12,16 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.5)
+    addressable (2.3.6)
     cistern (0.1.4)
     launchy (2.4.2)
       addressable (~> 2.3)
-    mime-types (2.0)
-    multi_json (1.8.2)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
+    mime-types (2.3)
+    multi_json (1.10.1)
+    netrc (0.7.7)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
 
 PLATFORMS
   ruby
