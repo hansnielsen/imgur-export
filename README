@@ -12,3 +12,11 @@ This is a script that will export all of your imgur metadata.
    These tokens are visible in the URL after you authentication the app.
    $ ruby imgurexport.rb
 8. You now have an export.json file with all of your metadata! Woo!
+
+If you want to also download all your images:
+
+1. This command takes export.json and makes urls.txt:
+   $ ruby geturls.rb
+2. Depending on whether you have wget or curl:
+   $ for i in `cat urls.txt` ; do wget $i ; done
+   $ for i in `cat urls.txt` ; do curl -O $i ; done
